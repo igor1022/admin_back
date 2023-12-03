@@ -13,6 +13,9 @@ server.use(bodyParser.json());
 
 
 let obj = {};
+server.get('/', async(req, res) => {
+    res.send(<div>Hello!!!</div>);
+});
 
 server.get('/get_length_bd', async(req, res) => {
     console.log('hello get lenght bd');
